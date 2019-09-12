@@ -1,0 +1,12 @@
+//https://codelearn.io/Training/Detail?Id=16902
+function onesAndZeros(s){
+    regex = /10|01/g;
+    if(regex.test(s)==false){
+        return s.length;
+    }
+    else {
+        s = s.replace(regex,'');
+        return onesAndZeros(s);
+    }
+}
+onesAndZeros('101');
