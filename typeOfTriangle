@@ -1,0 +1,24 @@
+//https://codelearn.io/Training/Detail?Id=5987
+function typeOfTriangle(x, y, z){
+    let newArr =[x,y,z];
+    newArr.sort((a,b)=>a-b);
+    let a = newArr[0];
+    let b = newArr[1];
+    let c = newArr[2];
+    if(a==b&&a==c&&a==b){
+        return 1;
+    }
+    if(c<b+a){
+        if(a==b||b==c||c==a){
+            if(a*a+b*b == c*c||a*a+c*c==b*b||b*b+c*c==a*a){
+                return 3;
+            }
+            return 2;
+        }
+        if(a*a+b*b == c*c||a*a+c*c==b*b||b*b+c*c==a*a){
+                return 3;
+        }
+        return 0;
+    }
+    return -1;
+}
