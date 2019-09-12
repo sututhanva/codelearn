@@ -1,0 +1,9 @@
+//https://codelearn.io/Training/Detail?Id=6188
+
+function coolString(inputString){
+    regex = /[a-z][a-z]|[A-Z][A-Z]/g;
+    if(regex.test(inputString)==false){
+        return true;
+    }
+    return false;
+}
