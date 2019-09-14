@@ -1,0 +1,13 @@
+//https://codelearn.io/Training/Detail?Id=9587
+function nonZeros(v, a){
+    let strV = ''+v;
+    let strA = ''+a;
+    n = v + a;
+    let strN = ''+n;
+    let nonZerosV = Number(strV.replace(/0/g,''));
+    let nonZerosA = Number(strA.replace(/0/g,''));
+    if(nonZerosA+nonZerosV==Number(strN.replace(/0/g,''))){
+        return 'YES';
+    }
+    return 'NO';
+}
