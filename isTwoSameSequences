@@ -1,0 +1,21 @@
+//https://codelearn.io/Training/Detail?Id=159729
+function isTwoSameSequences(arr){
+    let i =0;
+    let j=arr.length-1;
+    let sumleft = arr[i];
+    let sumright =arr[j];
+    while(i<j){
+        if(sumleft==sumright&&i==j-1){
+            return true;
+        }
+        if(sumleft<sumright){
+            i++;
+            sumleft += arr[i];
+        }
+        else if(sumleft>=sumright){
+            j--;
+            sumright += arr[j];
+        }
+    }
+    return false;
+}
