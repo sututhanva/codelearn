@@ -1,4 +1,5 @@
 //https://codelearn.io/Training/Detail?Id=3417
+//medium
 function digitsProduct(product){
     let pro = '';
     if(product == 1){
