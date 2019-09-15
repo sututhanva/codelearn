@@ -1,0 +1,14 @@
+//https://codelearn.io/Training/Detail?Id=4538
+function maxSubarray(a){
+        let maxSub = 0;
+        let sum = 0; 
+        for (let i = 0; i < a.length; i++) 
+        { 
+            sum = sum + a[i]; 
+            if (maxSub < sum) 
+                maxSub = sum; 
+            if (sum < 0) 
+                sum = 0; 
+        } 
+        return maxSub; 
+}
