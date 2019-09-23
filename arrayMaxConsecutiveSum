@@ -1,0 +1,16 @@
+//https://codelearn.io/Training/Detail?Id=3621
+//7 easy
+function arrayMaxConsecutiveSum(inputArray, k){
+    let passed = [];
+    for(let i =0;i<inputArray.length-k+1;i++){
+        let sum = 0;
+        let j = i;
+        let n = j+k;
+        while(j<n){
+            sum += inputArray[j];
+            j++;
+        }
+        passed.push(sum);
+    }
+    return Math.max(...passed);
+}
