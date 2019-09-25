@@ -1,0 +1,11 @@
+//https://codelearn.io/Training/Detail?Id=10697
+//10
+function specialPolynomial(x, n){
+    let sum = 0;
+    for(let i=0;i<=n;i++){
+        sum+= Math.pow(x,i);
+        if(sum>n){
+            return i-1;
+        }
+    }
+}
