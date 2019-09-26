@@ -1,0 +1,17 @@
+//https://codelearn.io/Training/Detail?Id=35178
+//11
+function divideArray(a, b){
+    let count =0;
+    for(let i=0;i<a.length;i++){
+        let k=0;
+        for(let j=0;j<b.length;j++){
+            if(a[i]%b[j]==0){
+                k++;
+            }
+        }
+        if(k==b.length){
+            count++;
+        }
+    }
+    return count
+}
