@@ -1,0 +1,5 @@
+//https://codelearn.io/Training/Detail?Id=18479
+function onesAndZeros4(s){
+    let newStr = s.replace(/010/g,'');
+    return (s.length - newStr.length)/3;
+}
