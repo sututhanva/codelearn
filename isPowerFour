@@ -1,0 +1,9 @@
+//https://codelearn.io/Training/Detail?Id=18003
+function isPowerOfFour(n){
+    for(let i = 0; i < 32;i++){
+        if(Math.pow(4,i)==n){
+            return true;
+        }
+    }
+    return false;
+}
